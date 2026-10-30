@@ -1,0 +1,20 @@
+{
+  "name": "durable-incident-agent",
+  "version": "1.0.0",
+  "description": "Durable AI incident triage workflow on Dapr: survives a process crash and resumes from its last completed step.",
+  "scripts": {
+    "demo": "node --env-file-if-exists=.env --import tsx scripts/demo.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@dapr/dapr": "^3.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "type": "module",
+  "private": true
+}
